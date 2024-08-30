@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="\static\css\content.css" />  </head>
+  <body>
+    <h1>Java Abstraction</h1>
+
+    <div class="main">
+      <div class="info">
+        <h3>Abstract Classes and Methods</h3>
+        <p>
+          Data abstraction is the process of hiding certain details and showing only essential information to the user.<br />
+          <br />Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter). <br>
+          The abstract keyword is a non-access modifier, used for classes and methods: <br>
+          * Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class). <br>
+          * Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from). <br>
+          An abstract class can have both abstract and regular methods:
+        </p>
+        <img src="\static\images\JavaImage\abs1.png" alt="" width="1200px"/>
+        <p>From the example above, it is not possible to create an object of the Animal class:</p>
+        <img src="\static\images\JavaImage\abs2.png" alt="" width="1200px"/>
+        <p>To access the abstract class, it must be inherited from another class. Let's convert the Animal class we used in the <a href="polymorphism.html">Polymorphism</a> chapter to an abstract class:</p>
+        <img src="\static\images\JavaImage\abs3.png" alt="" width="1200px"/>
+      </div>
+    </div>
+  </body>
+</html>

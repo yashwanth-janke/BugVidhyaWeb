@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bug Vidhya</title>
+  <link rel="stylesheet" href="\static/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">BugVidhya</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#python" class="navbar__links" id="python-page">Python</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#java" class="navbar__links" id="java-page">Java</a>
+        </li>
+        <li onclick="py()"  class="navbar__btn">
+          <a href="{{ url_for('editor') }}" class="button" id="playground">Playground</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <div class="hero__container">
+      <h1 class="hero__heading">Decoding Tomorrow's <span>Language</span></h1>
+      <p class="hero__description">Where Bugs Become Features!</p>
+      <button class="main__btn"><a href="{{ url_for('editor') }}">Develop Bugs</a></button>
+    </div>
+  </div>
+
+  <!-- Python Section -->
+  <div class="main" id="python">
+    <div class="main__container">
+      <div class="main__img--container">
+        <div class="main__img--card">
+            <i class='fab fa-python' ></i>
+        </div>
+      </div>
+      <div class="main__content">
+        <h1>Python</h1>
+        <h2>Stay in sync with the popular trend</h2>
+        <p>Develop the Must-Have Skill for AI Advancement</p>
+        <button class="main__btn">
+          <a href="{{ url_for('python') }}">Start Learning</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaImage Section -->
+  <div class="main" id="java">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>Java</h1>
+        <h2>Embrace Software Development</h2>
+        <p>Master the Essential Skill for Android Development</p>
+
+        <button class="main__btn">
+          <a href="{{ url_for('java') }}">Start Learning</a>
+        </button>
+      </div>
+      <div class="main__img--container">
+        <div class="main__img--card" id="card-2">
+            <i class='fab fa-java' ></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exercises Section -->
+  <div class="exercises" id="exercises">
+    <h1>Sharpen Your Skills ?</h1>
+    <div class="exercises__wrapper">
+      <div class="exercises__card">
+        <h2>Python Practice Zone</h2>
+        <p>
+          Sharpen Python skills with interactive exercises and challenges.
+        </p>
+        <div class="exercises__btn"><a href="https://www.codingbat.com/python"><button>Start Coding</button></a></div>
+      </div>
+
+      <div class="exercises__card">
+        <h2>Java Coding Playground</h2>
+        <p>Sharpen Java skills with hands-on coding exercises.</p>
+        <div class="exercises__btn"><a href="https://www.codingbat.com/java"><button>Start Coding</button></a></div>
+      </div>
+
+      <div class="exercises__card">
+        <h2>Kotlin Code Challenges</h2>
+        <p>Challenge yourself with Kotlin coding exercises and puzzles.</p>
+        <div class="exercises__btn"><a href="https://www.codingbat.com/java"><button>Start Coding</button></a></div>
+      </div>
+
+      <div class="exercises__card">
+        <h2>C++ Coding Lab</h2>
+        <p>
+          Level up C++ skills with practical coding exercises and projects.
+        </p>
+        <div class="exercises__btn"><a href="https://www.codingbat.com/python"><button>Start Coding</button></a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About Us</h2>
+          <a href="/sign__up">Our Approach</a>
+          <a href="/">Success Stories</a>
+          <a href="/">Join our Team</a>
+          <a href="/">Terms of Learning</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Contact Us</h2>
+          <a href="/contact">Get in Touch</a>
+          <a href="/">FAQs</a>
+          <a href="/">Support</a>
+          <a href="/">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Resources</h2>
+          <a href="">Blog</a>
+          <a href="">Courses</a>
+          <a href="">Ebooks</a>
+          <a href="">Webinars</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>Social Media</h2>
+          <a href="/">Instagram</a>
+          <a href="/">Facebook</a>
+          <a href="/">Youtube</a>
+          <a href="/">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo">BugVidhya</a>
+        </div>
+        <p class="website__rights">© BugVidhya 2024 All rights reserved</p>
+        <div class="social__icons">
+          <a href="/" class="social__icon--link" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="/" class="social__icon--link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="/" class="social__icon--link">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="/" class="social__icon--link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="/" class="social__icon--link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="\static/js/editor.js"></script>
+  <script src="\static/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="\static\css\programming.css" />
+  </head>
+  <body>
+
+    <nav class="navbar">
+    <div class="navbar__container">
+      <a href="{{ url_for('index') }}" id="navbar__logo">BugVidhya</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="{{ url_for('index') }}" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{ url_for('python') }}" class="navbar__links" id="python-page">Python</a>
+        </li>
+        <li class="navbar__item">
+          <a href="{{ url_for('java') }}" class="navbar__links" id="java-page">Java</a>
+        </li>
+        <li onclick="py()"  class="navbar__btn">
+          <a href="{{ url_for('editor') }}" class="button" id="playground">Playground</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="cards-list">
+        <a href="{{ url_for('variablej') }}">
+      <div class="card 2">
+        <div class="card_title title-white">
+          <p>Variables</p>
+        </div>
+      </div>
+            </a>
+<a href="{{ url_for('overloading') }}">
+      <div class="card 2">
+        <div class="card_title title-white">
+         <p>OverLoading</p>
+        </div>
+      </div>
+</a>
+        <a href="{{ url_for('classes') }}">
+      <div class="card 2">
+        <div class="card_title title-white">
+          <p>Class/Objects</p>
+        </div>
+      </div>
+</a>
+<a href="{{ url_for('constructor') }}">
+      <div class="card 2">
+        <div class="card_title title-white">
+          <p>Constructors</p>
+        </div>
+      </div>
+</a><a href="{{ url_for('inheritence') }}">
+      <div class="card 2">
+        <div class="card_title title-white">
+         <p>Inheritence</p>
+        </div>
+      </div>
+</a>
+        <a href="{{ url_for('polymorphism') }}">
+      <div class="card 2">
+        <div class="card_title title-white">
+          <p>Polymorphism</p>
+        </div>
+      </div>
+</a>
+        <a href="{{ url_for('abstraction') }}">
+      <div class="card 2">
+        <div class="card_title title-white">
+          <p>Abstraction</p>
+        </div>
+      </div>
+</a>
+        <a href="{{ url_for('methods') }}">
+      <div class="card 2">
+        <div class="card_title title-white">
+         <p>Methods</p>
+        </div>
+      </div>
+</a>
+      
+    </div>
+  </body>
+</html>
